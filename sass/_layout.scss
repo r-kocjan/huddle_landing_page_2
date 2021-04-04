@@ -35,8 +35,29 @@
 }
 
 .main{
-    padding: 3rem 2.5rem;
+    padding: 3rem 2rem;
     display: grid;
     
 }
 
+.footer{
+    padding: 3rem 2rem;
+    background-color: $dark-cyan;
+    
+
+    .huddle{
+        color: #fff;
+
+        &_info{
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+
+            .paragraph{
+                line-height: 1.2;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -53,8 +53,26 @@ body {
 }
 
 .main {
-  padding: 3rem 2.5rem;
+  padding: 3rem 2rem;
   display: grid;
+}
+
+.footer {
+  padding: 3rem 2rem;
+  background-color: #00252e;
+}
+.footer .huddle {
+  color: #fff;
+}
+.footer .huddle_info {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.footer .huddle_info .paragraph {
+  line-height: 1.2;
+  color: #fff;
 }
 
 img {
@@ -62,8 +80,14 @@ img {
   display: block;
 }
 
+.icon {
+  width: 1.5rem;
+  flex: 1 0 1.5rem;
+}
+
 .btn {
   padding: 0.8rem 3rem;
+  display: block;
   border: none;
   border-radius: 100px;
   font-family: inherit;
@@ -86,6 +110,12 @@ img {
   box-shadow: 0 -2px 1rem 1rem rgba(0, 0, 0, 0.03);
   height: 50rem;
   text-align: center;
+}
+.card-footer {
+  justify-items: center;
+  align-items: center;
+  height: 20rem;
+  transform: translateY(-50%);
 }
 .card:not(:last-child) {
   margin-bottom: 5rem;
