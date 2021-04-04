@@ -1,0 +1,17 @@
+// SECTION HEADER
+
+.section_header{
+    display: flex;
+    flex-direction: column;
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+        .logo{
+            width: 15rem;
+        }
+    }
+    
+}

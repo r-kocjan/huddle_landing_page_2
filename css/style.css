@@ -13,4 +13,29 @@ body {
   padding: 2rem 1.5rem;
 }
 
+.section_header {
+  display: flex;
+  flex-direction: column;
+}
+.section_header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.section_header .navigation .logo {
+  width: 15rem;
+}
+
+.btn {
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 100px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: #fff;
+  color: #00252e;
+  box-shadow: 0 1rem 8rem rgba(0, 0, 0, 0.4);
+}
+
 /*# sourceMappingURL=style.css.map */
