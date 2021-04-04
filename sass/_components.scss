@@ -3,6 +3,10 @@
 img{
     width: 90%;
     display: block;
+
+    @media(min-width: 1200px){
+        width: 50%;
+    }
 }
 .icon{
     width: 1.5rem;
@@ -24,12 +28,17 @@ img{
     font-weight: 700;
     background-color: #fff;
     color: $dark-cyan;
-    box-shadow: 0 1rem 8rem rgba(0,0,0,.4);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
     
+    @media(min-width: 1200px){
+        padding: 1.8rem 5.5rem;
+        font-size: 1.8rem;
+    }
+
     &-pink{
         background-color: $pink;
         color: #fff;
-        padding: 1.2rem 4.5rem;
+        padding: 2rem 5.5rem;
     }
 }
 
