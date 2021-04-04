@@ -22,3 +22,25 @@ img{
         padding: 1.2rem 4.5rem;
     }
 }
+
+.card{
+    padding: 3rem 0;
+    display: grid;
+    justify-items: center;
+    
+    border-radius: 1.5rem;
+    box-shadow: 0 -2px 1rem 1rem rgba(0,0,0,.03);
+    height: 50rem;
+    text-align: center;
+    &:not(:last-child){
+        margin-bottom: 5rem;
+    }
+
+    img{
+        width: 25rem;
+        margin-bottom: 2rem;
+    }
+    .paragraph{
+        width: 80%;
+    }
+}
