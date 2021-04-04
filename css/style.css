@@ -19,6 +19,13 @@
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -105,8 +112,18 @@ body {
   }
 }
 .footer .huddle {
-  width: 33.33333333%;
+  width: 100%;
   color: #fff;
+}
+@media (max-width: 400px) {
+  .footer .huddle {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .huddle {
+    width: 33.3333333%;
+  }
 }
 .footer .huddle_info {
   margin-top: 2.5rem;
@@ -210,7 +227,7 @@ img {
 }
 
 .card {
-  padding: 3.5rem 4rem;
+  padding: 2.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-items: center;

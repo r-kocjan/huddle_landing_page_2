@@ -82,8 +82,16 @@
 
     .huddle{
         
-        width: 33.33333333%;
+        width: 100%;
         color: #fff;
+        
+        @media(max-width: 400px){
+            margin-top: 10rem;
+        }
+
+        @media(min-width: 1200px){
+            width: 33.3333333%;
+        }
 
         &_info{
             margin-top: 2.5rem;
