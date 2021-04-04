@@ -10,6 +10,15 @@
   margin-bottom: 15rem;
 }
 
+@media (min-width: 1200px) {
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,12 +82,21 @@ body {
 
 .main {
   padding: 3rem 2rem;
-  display: grid;
+}
+@media (min-width: 1200px) {
+  .main {
+    padding: 5rem 20rem;
+  }
 }
 
 .footer {
   padding: 4rem 2rem;
   background-color: #00252e;
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 5rem 20rem;
+  }
 }
 .footer .huddle {
   margin-top: -15rem;
@@ -174,13 +192,28 @@ img {
 }
 
 .card {
-  padding: 3rem 0;
-  display: grid;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
+  align-items: center;
+  gap: 3rem;
   border-radius: 1.5rem;
   box-shadow: 0 -2px 1rem 1rem rgba(0, 0, 0, 0.03);
   height: 50rem;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .card {
+    flex-direction: row;
+    height: 40rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .card .img-1,
+.card .img-3 {
+    order: 2;
+  }
 }
 .card-footer {
   justify-items: center;
@@ -195,6 +228,11 @@ img {
 .card img {
   width: 25rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .card img {
+    width: 35rem;
+  }
 }
 .card .paragraph {
   width: 80%;

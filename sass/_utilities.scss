@@ -1,3 +1,8 @@
 .mb-small{margin-bottom: 5rem;}
 .mb-medium{margin-bottom: 10rem;}
 .mb-big{margin-bottom: 15rem;}
+.flex-col{
+    @media(min-width: 1200px){
+        display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    }
+    

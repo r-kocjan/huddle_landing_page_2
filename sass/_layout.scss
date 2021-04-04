@@ -54,7 +54,13 @@
 
 .main{
     padding: 3rem 2rem;
-    display: grid;
+    
+    
+
+    
+        @media(min-width: 1200px){
+            padding: 5rem 20rem;
+        }
     
 }
 
@@ -62,6 +68,9 @@
     padding: 4rem 2rem;
     background-color: $dark-cyan;
     
+    @media(min-width: 1200px){
+        padding: 5rem 20rem;
+    }
 
     .huddle{
         margin-top: -15rem;
