@@ -97,9 +97,14 @@ body {
   .footer {
     padding: 5rem 20rem;
   }
+  .footer .footer_items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 .footer .huddle {
-  margin-top: -15rem;
+  width: 33.33333333%;
   color: #fff;
 }
 .footer .huddle_info {
@@ -112,18 +117,30 @@ body {
   line-height: 1.2;
   color: #fff;
 }
-.footer .huddle .menu {
+.footer .menu {
   list-style: none;
 }
-.footer .huddle .menu li {
+@media (min-width: 1200px) {
+  .footer .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+.footer .menu li {
   padding: 0.6rem 0;
 }
-.footer .huddle .menu_link {
+.footer .menu_link {
   text-decoration: none;
-  color: inherit;
+  color: #fff;
   font-size: 1.5rem;
 }
-.footer .huddle .social {
+@media (min-width: 1200px) {
+  .footer .menu_link {
+    font-size: 2rem;
+  }
+}
+.footer .social {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -131,7 +148,7 @@ body {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.footer .huddle .social li {
+.footer .social li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,11 +157,11 @@ body {
   height: 4rem;
   border-radius: 50%;
 }
-.footer .huddle .social i {
+.footer .social i {
   color: #fff;
   font-size: 2rem;
 }
-.footer .huddle .rights {
+.footer .rights {
   text-align: center;
   width: 100%;
 }
@@ -221,6 +238,12 @@ img {
   height: 20rem;
   background-color: #fff;
   transform: translateY(-80%);
+}
+@media (min-width: 1200px) {
+  .card-footer {
+    flex-direction: column;
+    width: 40%;
+  }
 }
 .card:not(:last-child) {
   margin-bottom: 5rem;

@@ -77,7 +77,8 @@ img{
         transform: translateY(-80%);
 
           @media(min-width: 1200px){
-            
+            flex-direction: column;
+            width: 40%;
         }
         
     }

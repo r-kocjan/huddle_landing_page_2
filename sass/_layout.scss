@@ -70,10 +70,18 @@
     
     @media(min-width: 1200px){
         padding: 5rem 20rem;
+        
+
+        .footer_items{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
     }
 
     .huddle{
-        margin-top: -15rem;
+        
+        width: 33.33333333%;
         color: #fff;
 
         &_info{
@@ -85,50 +93,68 @@
             .paragraph{
                 line-height: 1.2;
                 color: #fff;
+
             }
         }
-        .menu{
-            list-style: none;
+    }
+    .menu{
+        list-style: none;
+        @media(min-width: 1200px){
+            
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+         
 
-            li{
-                padding: .6rem 0;
-            }
-            &_link{
-                text-decoration: none;
-                color: inherit;
-                font-size: 1.5rem;
-            }
+      }
+      
+        li{
+            padding: .6rem 0;
         }
-        .social{
-            list-style:none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
+        &_link{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
 
-            li{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid #fff;
-                width: 4rem;
-                height: 4rem;
-                border-radius: 50%;
-            }
-
-
-            i{
-                color: #fff;
+            @media(min-width: 1200px){
                 font-size: 2rem;
             }
         }
+    }
+    .social{
+        list-style:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
 
-        .rights{
-            text-align: center;
-            width: 100%;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
         }
 
-       
+
+        i{
+            color: #fff;
+            font-size: 2rem;
+        }
     }
+
+    .rights{
+        text-align: center;
+        width: 100%;
+    }
+
+   
+    
 }
+
+
+
+
