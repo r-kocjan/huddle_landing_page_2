@@ -10,4 +10,9 @@
     color: $dark-cyan;
     box-shadow: 0 1rem 8rem rgba(0,0,0,.4);
     
+    &-pink{
+        background-color: $pink;
+        color: #fff;
+        padding: 1.2rem 4.5rem;
+    }
 }
