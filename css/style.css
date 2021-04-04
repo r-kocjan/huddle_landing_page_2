@@ -98,6 +98,7 @@ body {
     padding: 5rem 20rem;
   }
   .footer .footer_items {
+    margin-top: 8rem;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -237,12 +238,16 @@ img {
   align-items: center;
   height: 20rem;
   background-color: #fff;
-  transform: translateY(-80%);
+  width: 90%;
+  transform: translateY(60%);
+  margin: 0 auto;
+  padding: 2rem;
 }
 @media (min-width: 1200px) {
   .card-footer {
     flex-direction: column;
     width: 40%;
+    padding: 4rem;
   }
 }
 .card:not(:last-child) {

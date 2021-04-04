@@ -73,12 +73,14 @@ img{
         align-items: center;
         height: 20rem;
         background-color: #fff;
-        
-        transform: translateY(-80%);
-
+        width: 90%;
+        transform:translateY(60%);
+        margin: 0 auto;
+        padding: 2rem;
           @media(min-width: 1200px){
             flex-direction: column;
             width: 40%;
+            padding: 4rem;
         }
         
     }
