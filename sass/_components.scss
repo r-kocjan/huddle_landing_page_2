@@ -10,6 +10,11 @@ img{
     
 }
 
+.logo{
+    width: 15rem;
+    
+}
+
 .btn{
     padding: .8rem 3rem;
     display: block;
@@ -36,13 +41,16 @@ img{
     box-shadow: 0 -2px 1rem 1rem rgba(0,0,0,.03);
     height: 50rem;
     text-align: center;
+    
 
     &-footer{
+        
         justify-items: center;
         align-items: center;
         height: 20rem;
-        transform: translateY(-50%);
+        background-color: #fff;
         
+        transform: translateY(-80%);
         
     }
 

@@ -6,6 +6,10 @@
   margin-bottom: 10rem;
 }
 
+.mb-big {
+  margin-bottom: 15rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +40,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.section_header .navigation .logo {
-  width: 15rem;
-}
 .section_header .hero {
   display: flex;
   flex-direction: column;
@@ -58,10 +59,11 @@ body {
 }
 
 .footer {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   background-color: #00252e;
 }
 .footer .huddle {
+  margin-top: -15rem;
   color: #fff;
 }
 .footer .huddle_info {
@@ -74,6 +76,42 @@ body {
   line-height: 1.2;
   color: #fff;
 }
+.footer .huddle .menu {
+  list-style: none;
+}
+.footer .huddle .menu li {
+  padding: 0.6rem 0;
+}
+.footer .huddle .menu_link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+.footer .huddle .social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer .huddle .social li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.footer .huddle .social i {
+  color: #fff;
+  font-size: 2rem;
+}
+.footer .huddle .rights {
+  text-align: center;
+  width: 100%;
+}
 
 img {
   width: 90%;
@@ -83,6 +121,10 @@ img {
 .icon {
   width: 1.5rem;
   flex: 1 0 1.5rem;
+}
+
+.logo {
+  width: 15rem;
 }
 
 .btn {
@@ -115,7 +157,8 @@ img {
   justify-items: center;
   align-items: center;
   height: 20rem;
-  transform: translateY(-50%);
+  background-color: #fff;
+  transform: translateY(-80%);
 }
 .card:not(:last-child) {
   margin-bottom: 5rem;
